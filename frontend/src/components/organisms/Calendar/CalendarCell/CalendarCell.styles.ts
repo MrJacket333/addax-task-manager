@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CalendarCellWrapper = styled.div<{ isCurrentMonth: boolean}>`
-  background-color: ${props => props.isCurrentMonth ? '#FAFAFA' : '#fff'};
+  background-color: ${props => props.isCurrentMonth ? '#fff' : '#ececec'};
   display: flex;
   flex-direction: column;
   border-radius: 2px;

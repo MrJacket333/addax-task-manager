@@ -1,5 +1,10 @@
-import { InputComponent } from "./TextInput.styles";
+import React from 'react';
+import { InputComponent, Label } from "./TextInput.styles";
+import type { TextInputProps } from "./TextInput.types";
 
-export const TextInput = () => {
-  return <InputComponent type="text" placeholder="Search tasks..." />;
+export const TextInput = ({ ref, name, label, placeholder }: TextInputProps) => {
+  return <React.Fragment>
+    {label && <Label htmlFor={name}>{label}</Label>}
+    <InputComponent ref={ref} name={name} type="text" placeholder={placeholder} />
+  </React.Fragment>;
 }

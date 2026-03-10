@@ -24,12 +24,12 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "paths": {
-      "@/*": ["./src/*"],
+    "paths": {      
       "@atoms/*": ["./src/components/atoms/*"],
       "@molecules/*": ["./src/components/molecules/*"],
       "@organisms/*": ["./src/components/organisms/*"],
       "@pages/*": ["./src/pages/*"],
+      "@/*": ["./src/*"],
     }
   },
   "include": ["src/**/*", "vite.config.ts"]

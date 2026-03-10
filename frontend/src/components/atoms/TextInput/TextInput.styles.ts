@@ -5,12 +5,16 @@ export const InputComponent = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  width: 100%;
-  width: 250px;
   
   &:focus {
     outline: none;
     border-color: #007BFF;
     box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
   }
+`;
+
+export const Label = styled.label`
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 `;

@@ -1,5 +1,5 @@
-import { TextInput } from "@/components/atoms/TextInput/TextInput.component"
+import { TextInput } from "@atoms/TextInput/TextInput.component"
 
 export const SearchInput = () => {
-  return <TextInput />;
+  return <TextInput name="search" placeholder="Filter tasks by text" />;
 }

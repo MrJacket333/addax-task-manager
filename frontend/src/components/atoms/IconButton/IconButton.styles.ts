@@ -1,14 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 
-export const IconButtonComponent = styled.button`
+export const IconButtonComponent = styled.button<{ $noBorder?: boolean, $width?: number, $height?: number }>`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  width: 32px;
-  height: 32px;
+  width: ${({ $width }) =>  $width ?? 32}px;
+  height: ${({ $height }) =>  $height ?? 32}px;
   display: flex;
   justify-content: center;
   align-items: center;
